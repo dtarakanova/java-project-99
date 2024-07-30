@@ -1,9 +1,9 @@
 FROM gradle:8.5.0-jdk21
 
-WORKDIR /src
+WORKDIR /app
 
-COPY /src .
+COPY /app .
 
 RUN gradle installDist
 
-CMD ./build/install/src/bin/src
+CMD ./build/install/app/bin/app
