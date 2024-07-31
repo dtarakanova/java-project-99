@@ -9,7 +9,9 @@ plugins {
 group = "hexlet.code"
 version = "0.0.1-SNAPSHOT"
 
-application { mainClass.set("hexlet.code.AppApplication") }
+application {
+    applicationName = "app"
+    mainClass.set("hexlet.code.AppApplication") }
 
 
 repositories {
