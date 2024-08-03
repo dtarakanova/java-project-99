@@ -1,7 +1,7 @@
 plugins {
     application
     id("checkstyle")
-    id ("jacoco")
+    id("jacoco")
     id("io.freefair.lombok") version "8.6"
     id("org.springframework.boot") version "3.2.4"
     id("io.spring.dependency-management") version "1.1.4"
@@ -23,8 +23,10 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-devtools")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    runtimeOnly("com.h2database:h2:2.2.224")
 }
 
 tasks.withType<Test> {
