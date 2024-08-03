@@ -10,10 +10,7 @@ lint:
 test:
 	./gradlew test
 
-update-js-deps:
-	npx ncu -u
-
-check-java-deps:
-	./gradlew dependencyUpdates -Drevision=release
+report:
+	./gradlew jacocoTestReport
 
 .PHONY: build frontend
