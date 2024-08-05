@@ -31,7 +31,7 @@ public class UserController {
     @Autowired
     private UserMapper userMapper;
 
-    @GetMapping(path = "/{id")
+    @GetMapping(path = "/{id}")
     @ResponseStatus(HttpStatus.OK)
     public UserDTO showUser(@PathVariable Long id) {
         var user = userRepository.findById(id)
@@ -57,7 +57,7 @@ public class UserController {
         return userMapper.map(user);
     }
 
-    @PutMapping(path = "/{id")
+    @PutMapping(path = "/{id}")
     @ResponseStatus(HttpStatus.OK)
     public UserDTO updateUser(@Valid @RequestBody UserUpdateDTO userUpdateDTO, @PathVariable Long id) {
         var user = userRepository.findById(id)
@@ -67,7 +67,7 @@ public class UserController {
         return userMapper.map(user);
     }
 
-    @DeleteMapping(path = "/id")
+    @DeleteMapping(path = "/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteUser(@PathVariable Long id) {
         userRepository.deleteById(id);
