@@ -3,4 +3,4 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/35f0e3923722e909b685/test_coverage)](https://codeclimate.com/github/dtarakanova/java-project-99/test_coverage)
 
 ### Project demo
-[VIEW DEMO](https://java-project-99-ymvi.onrender.com/)
+[VIEW DEMO](https://java-project-99-rizi.onrender.com/)
